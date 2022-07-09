@@ -15,7 +15,7 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     featured = models.BooleanField(default=False)
     active = models.BooleanField(default=False)
-    #thumbnail
+    thumbnail = models.ImageField(null=True, blank=None, upload_to="images", default="placeholder.png")
     tags = models.ManyToManyField(Tag, null=True)
 
     def __str__(self):
