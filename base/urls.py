@@ -6,4 +6,9 @@ urlpatterns = [
     path('posts/', views.posts, name="posts"),
     path('post/<str:pk>/', views.post, name="post"),
     path('profile/', views.profile, name="profile"),
+
+
+    #CRUD VIEWS
+    path('create_post/', views.createPost, name="create_post"),
+    path('update_post/<str:pk>', views.updatePost, name="update_post"),
 ]
