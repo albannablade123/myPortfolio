@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'crispy_forms',
     'django_filters',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

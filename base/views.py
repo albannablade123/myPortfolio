@@ -35,14 +35,13 @@ def posts(request):
     context = {'posts':posts, 'postFilter':postFilter}
     return render(request,'base/posts.html', context)
 
-def post(request, pk):
-    post = Post.objects.get(id=pk)
+def post(request, slug):
+    post = Post.objects.get(id=slug)
     context = {'post':post}
     return render(request,'base/post.html', context)
 
 def profile(request):
     return render(request,'base/profile.html')
-
 
 #CRUD VIEWS
 @login_required(login_url="home")
@@ -60,13 +59,13 @@ def createPost(request):
 
         return redirect('posts')
 
-        context = {'form':form}
+    context = {'form':form}
 
-        return render(request,'base/post_form.html', context)
+    return render(request,'base/post_form.html', context)
 
 
-def updatePost(request,pk):
-    post = Post.objects.get(id=pk)
+def updatePost(request,slug):
+    post = Post.objects.get(id=slug)
     form = PostForm(instance=post)
 
 
@@ -87,7 +86,7 @@ def updatePost(request,pk):
 
 @login_required(login_url="home")
 def deletePost(request):
-    post = Post.objects.get(id=pk)
+    post = Post.objects.get(id=slug)
 
     if request.method == 'POST':
         post.delete()

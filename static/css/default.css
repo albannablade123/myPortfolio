@@ -91,6 +91,7 @@ h6 { font-size: 16px;}
 	background-color: var(--secondaryColor);
 	border:1px solid var(--borderColor);
 	border-radius:5px 5px 0 0;
+	text-align: center;
 
 
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -98,7 +99,7 @@ h6 { font-size: 16px;}
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-areas: 
 		'nav-wrapper nav-wrapper'
 		'left-column right-column'
@@ -222,7 +223,7 @@ h6 { font-size: 16px;}
 .left-column{
 	grid-area: left-column;
 	padding-top:50px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 #profile_pic{
@@ -285,15 +286,37 @@ h6 { font-size: 16px;}
 	text-align: center;
 }
 
+h3{
+	margin: 0px;
+	height: 40px;
+}
+
 .right-column{
 	grid-area: right-column;
 	display: grid;
-	align-content: center;
-
+	padding-right: 50px;
+	text-align: justify;
+	color: beige;
+	align-items: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
 }
 
+.about-me-paragraph{
+	text-align: justify;
+	margin-right: 20px;
+	margin-bottom: 60px;
+}
+
+.about-me-title{
+	margin-top: 60px;
+	text-align: center;
+	margin-right: 20px;
+}
 
 #preview-shadow{
 	background-color: var(--previewShadow);

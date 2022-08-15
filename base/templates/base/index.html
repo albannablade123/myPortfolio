@@ -17,9 +17,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
@@ -29,7 +29,7 @@
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<h1>Hi, I'm Dennis Ivanov</h1>
+				<h1>Hi, I'm Hasan Al Banna</h1>
 			</div>
 
 
@@ -52,16 +52,8 @@
 
 				<div class="right-column">
 
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
+					<h3 class="about-me-title">A Little About Myself</h3>
+					<p class="about-me-paragraph">An enthusiastic Computer Engineering student that excel in today’s technical skills as well as soft skills and is looking to contribute in roles where there exist an opportunity for learning and self development, to further improve skills through working collaboratively with other experienced team members, integrating the latest in-demand technical skills with soft-skill, mainly within business scope in order to create value and to ship reliable software applications.</p>
 				</div>
 			</div>
 		</div>
@@ -72,18 +64,8 @@
 
 			<div class="about-wrapper">
 				<div class="about-me">
-					<h4>More about me</h4>
-
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
-					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
-
-
-					<hr>
 
 					<h4>TOP EXPERTISE</h4>
-
-					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="{% static 'resume.pdf' %}">Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
@@ -102,13 +84,16 @@
 							<li>HTML/CSS</li>
 						</ul>
 
+						
+
 					</div>
+					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="{% static 'resume.pdf' %}">Download Resume</a></p>
 
 				</div>
 
 				
 				<div class="social-links">
-					<img id="social_img" src="{% static 'images/follow.jpg' %}">
+					<img id="social_img" src="{% static 'images/linkedin.png' %}">
 					<h3>Find me on Twitter & Youtube</h3>
 
 					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
