@@ -70,6 +70,8 @@ h6 { font-size: 16px;}
 	overflow:auto;
 }
 
+.ed
+
 
 
 
@@ -83,7 +85,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 10em;
+	min-height: 40em;
 
 }
 
@@ -306,6 +308,16 @@ h3{
 
 }
 
+
+.main-container-education{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.course--taken{
+	padding-right: 40px;
+}
+
 .about-me-paragraph{
 	text-align: justify;
 	margin-right: 20px;
@@ -365,11 +377,23 @@ h3{
 	left: -5px
 }
 
+.education-title{
+	margin-bottom: 0px;
+}
+
 .about-wrapper{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	padding-bottom: 50px;
 	padding-top: 50px;
+	gap:100px;
+}
+
+.about-wrapper-education{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding-bottom: 50px;
+	padding-top: 30px;
 	gap:100px;
 }
 
@@ -380,10 +404,56 @@ h3{
 	background-color: var(--previewShadow);
 }
 
+.education-information{
+	display: flex;
+}
+
+.agu-logo{
+	width: 100px;
+	height: 140px;
+	margin-right: 40px;
+}
+
 .social-links{
-	display: grid;
+	
 	align-content: center;
 	text-align: center;
+	align-items: center;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.logo--grid{
+	display: flex;
+	align-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.logo-link{
+	margin-right: 40px;
+}
+
+#linkedin--logo {
+	width: 60px;
+}
+
+.section2-title{
+	padding-top: 0px;
+}
+
+#leetcode--logo {
+	width: 60px;
+}
+
+#github--logo {
+	width: 90px;
+	margin-bottom: 10px;
+}
+
+#twitter--logo {
+	width: 70px;
+	margin-bottom: 10px;
 }
 
 #social_img{
